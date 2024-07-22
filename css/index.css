@@ -1,0 +1,158 @@
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+html {
+    background-image: url("../img/wallpaperPoke.jpg");
+    font-family: "Pokemon Solid", sans-serif;
+}
+/*Ajusto el cuerpo de la galeria a flex para posteriormente usar grids para distribuir las cartas de 3 en 3 
+o de 2 en 2 o de 1 en 1*/
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para tabletas y pantallas más grandes */
+@media only screen and (max-width: 600px) {
+    .logo-pokemon {
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .grupoPoke {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 30px;
+        width: auto;
+        height: auto;
+        max-width: auto;
+    }
+
+    .botones {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .botones button {
+        background: #ffffff;
+        border: solid 1px rgb(0, 0, 0);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .botones img {
+        height: 20px;
+        width: 25px;
+    }
+
+    .botones button:hover {
+        background: rgb(244, 180, 77);
+        width: 60px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .logo-pokemon {
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .grupoPoke {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 30px;
+        width: auto;
+        height: auto;
+        max-width: auto;
+    }
+
+    .botones {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .botones button {
+        background: #ffffff;
+        border: solid 1px rgb(0, 0, 0);
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .botones img {
+        height: 20px;
+        width: 25px;
+    }
+
+    .botones button:hover {
+        background: rgb(244, 180, 77);
+        width: 60px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .logo-pokemon {
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .grupoPoke {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(230px, 1fr));
+        width: auto;
+        height: auto;
+        max-width: auto;
+    }
+
+}
+@media only screen and (min-width: 1300px) {
+    .logo-pokemon {
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .grupoPoke {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(280px, 1fr));
+        width: auto;
+        height: auto;
+        max-width: auto;
+    }
+
+}
+@media only screen and (min-width: 1600px) {
+    .logo-pokemon {
+        height: 100px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .grupoPoke {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(320px, 1fr));
+        width: auto;
+        height: auto;
+        max-width: auto;
+    }
+
+}
